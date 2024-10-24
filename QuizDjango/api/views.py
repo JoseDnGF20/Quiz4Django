@@ -1,3 +1,6 @@
+
+from django.shortcuts import render
+
 from rest_framework import generics
 from .models import Cliente, Habitacion, Reserva, Pago
 from .serializers import ClienteSerializer, HabitacionSerializer, ReservaSerializer, PagoSerializer
