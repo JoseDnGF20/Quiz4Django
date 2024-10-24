@@ -9,18 +9,18 @@ class ClienteSerializer(serializers.ModelSerializer):
 class HabitacionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Habitacion
-        field = '__all__'
+        fields = '__all__'
 
 
 class ReservaSerializer(serializers.ModelSerializer):
     class Meta:
         model = Reserva
-        field = '__all__'
+        fields = '__all__'
 
 
 class PagoSerializer(serializers.ModelSerializer):
     class Meta:
         model = Pago
-        field = '__all__'
+        fields = '__all__'
 
 

@@ -1,6 +1,3 @@
-
-from django.shortcuts import render
-
 from rest_framework import generics
 from .models import Cliente, Habitacion, Reserva, Pago
 from .serializers import ClienteSerializer, HabitacionSerializer, ReservaSerializer, PagoSerializer
@@ -28,7 +25,7 @@ class ReservaListCreate(generics.ListCreateAPIView):
     queryset = Reserva.objects.all()
     serializer_class = ReservaSerializer
     
-class CategoriaDetail(generics.RetrieveUpdateDestroyAPIView):
+class ReservaDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Reserva.objects.all()
     serializer_class = ReservaSerializer
     
@@ -37,6 +34,6 @@ class PagoListCreate(generics.ListCreateAPIView):
     queryset = Pago.objects.all()
     serializer_class = PagoSerializer
     
-class PedidoDetail(generics.RetrieveUpdateDestroyAPIView):
+class PagoDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Pago.objects.all()
     serializer_class = PagoSerializer
